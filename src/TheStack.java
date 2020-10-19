@@ -61,7 +61,24 @@ public class TheStack {
     	   return stackArray[topOfStack];
        }
 	
+       
+       public void pushMany(String multiplevalues) {
+    	   String[] tempString = multiplevalues.split("");
+    	   
+    	   for(int i = 0; i < tempString.length; i++) {
+    		   push(tempString[i]);
+    	   }
+    			   
+       }
+       
+       
+       public void popAll() {
+    	   for(int i = topOfStack; i >=0; i--) {
+    		   pop();
+    	   }
+       }
 	
+       
 	public static void main(String[] args) {
 		
 		
@@ -73,6 +90,10 @@ public class TheStack {
 		theStack.peek();  
 		
 		theStack.pop();
+		
+		theStack.pushMany("12 13 14 15");
+		
+		theStack.popAll();
 		
 		theStack.displayTheStack();
 		
