@@ -68,6 +68,7 @@ public class TheStack {
 		TheStack theStack = new TheStack(10);
 		
 		theStack.push("10");
+		theStack.push("15")
 		
 	}
 
