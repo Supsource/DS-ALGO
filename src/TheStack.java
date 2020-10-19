@@ -70,7 +70,11 @@ public class TheStack {
 		theStack.push("10");
 		theStack.push("15");
 		
-		theStack.peek();
+		theStack.peek();  
+		
+		theStack.pop();
+		
+		theStack.displayTheStack();
 		
 	}
 
